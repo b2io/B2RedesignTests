@@ -1,0 +1,169 @@
+body {
+  background: black;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+.sectionOne {
+  background: #000 url(../images/section1_background.jpg) no-repeat center
+    bottom;
+  height: 100vh;
+}
+
+.sectionTwo {
+  background: #000 url(../images/star-filled-background.jpg) no-repeat center
+    bottom;
+  background-size: cover;
+  height: 100vh;
+}
+
+.divider {
+  background-color: #161657;
+  height: 30vh;
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 300px;
+  animation-delay: 2s;
+  animation: fadein 8s;
+}
+
+.logo > img {
+  width: 700px;
+}
+
+.subtitle-text {
+  font-family: Roboto;
+  font-size: 2em;
+  font-style: italic;
+  color: white;
+  margin-top: 30px;
+  animation-delay: 3s;
+  margin-left: 50px;
+  animation-delay: 10s;
+  animation: fadein 15s;
+}
+
+.bases {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  margin-top: 300px;
+}
+
+.solid {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.dashed {
+  position: absolute;
+  top: -75px;
+  left: -75px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: dashed 3px white;
+}
+
+.striped {
+  width: 50px;
+  height: 50px;
+  margin: -75px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.striped > img {
+  max-width: 100%;
+}
+
+/*.bases {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  margin-top: 20%;
+}
+
+.sun {
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.orbitOne {
+  width: 300px;
+  height: 300px;
+  margin-top: -225px;
+  margin-left: -75px;
+  border-radius: 50%;
+  border: dashed 3px white;
+}
+
+.planet {
+  width: 75px;
+  margin: 0 auto;
+}
+
+.reactPlanet {
+  margin: 150px;
+}
+
+.rubyPlanet {
+  margin: 200px;
+}*/
+
+.moon-spinner {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  border-radius: 50%;
+  animation-delay: 2s;
+  animation: orbit 20s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+.moon-spinner2 {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 10%;
+  left: 11%;
+  border-radius: 50%;
+  animation-delay: 2s;
+  animation: orbit 15s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes orbit {
+  to {
+    transform: rotate(366deg);
+  }
+}
+
+@keyframes orbit-reverse {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
